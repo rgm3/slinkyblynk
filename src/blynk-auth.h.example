@@ -1,0 +1,13 @@
+/*
+ I put secrets and API keys in a header file that is included
+ in the main code, so that they don't get checked into revision control.
+
+ In the main .ino (or .cpp) file, do:
+ #include "blynk-auth.h"
+*/
+#ifndef BLYNK_AUTH_H
+#define BLYNK_AUTH_H
+
+char blynk_auth[] = "YourSecretAuthKey";
+
+#endif // BLYNK_AUTH_H
