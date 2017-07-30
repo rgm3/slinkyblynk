@@ -5,6 +5,7 @@
 #include "OneWire.h"
 #include "spark-dallas-temperature.h"
 #include "blynk/blynk.h"
+#include "blynk-auth.h"
 #include "DotStarPattern.h"
 
 #include "Tmp36.h"
@@ -34,7 +35,6 @@ uint32_t g_color1 = COLOR_SL_ORANGE;
 uint32_t g_color2 = COLOR_SL_BLUE;
 uint8_t buffer[NUMPIXELS];
 int g_count = 0;
-char blynk_auth[] = "SECRET_CODE_HERE"; // TODO: put this in 'blynk-auth.h' and add that to .gitignore
 int g_warningLevel = 80;
 float g_outsideTemp = 0;
 double g_insideTemp = 0; // Particle.variable doesn't support float
